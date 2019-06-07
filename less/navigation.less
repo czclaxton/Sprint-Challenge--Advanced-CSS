@@ -1,1 +1,33 @@
 // Navigation code here
+.nav-section {
+    .nav-styles(@navBgColor, @navBorderColor, @navFont);
+    h1 {
+        .center();
+        font-size: 3.5rem;
+        margin: 10px 0px;
+    }
+    nav ul {
+        .center();
+        flex-flow: row nowrap;
+        li {
+            margin: 10px 20px;
+            @media @mobile {
+                display: flex;
+                justify-content: center;
+                flex-flow: row nowrap;
+                width: 80%;
+                margin: auto;
+            }
+            a {
+                text-decoration: none;
+                font-style: inherit;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: @ebony-clay;
+                &:hover {
+                    color: lighten(@ebony-clay, 30%);
+                }
+            }
+        }
+    }
+}
