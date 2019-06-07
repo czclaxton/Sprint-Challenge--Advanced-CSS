@@ -1,1 +1,41 @@
+//style classes
+
+.btn-text-style {
+    font-size: 1.75rem;
+    text-align: center;
+    color: darken(@porcelain, 5%);
+}
+
+.btn-container-style {
+    width: 30%;
+    background-color: @ebony-clay;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    @media @mobile {
+        width: 100%;
+        padding: 20px 0px;
+      }
+}
+
+.row-center {
+    justify-content: center;
+}
+
+.flexbox {
+    display:flex;
+}
+
 // Mixins Here
+
+.btn-style {
+    .btn-text-style();
+    .btn-container-style();
+}
+
+.center {
+    .row-center();
+    .flexbox();
+}
+
+

@@ -1,20 +1,25 @@
 // Navigation code here
 .nav-section {
     font-style: @river-bend;
-    background-color: @wild-sand;
-    border: 1px solid @sea-shell;
+    background-color: darken(@wild-sand, 5%);
+    border: 1px solid darken(@wild-sand, 10%);
     h1 {
-        display: flex;
-        justify-content: center;
+        .center();
         font-size: 3.5rem;
         margin: 10px 0px;
     }
     nav ul {
-        display: flex;
+        .center();
         flex-flow: row nowrap;
-        justify-content: center;
         li {
             margin: 10px 20px;
+            @media @mobile {
+                display: flex;
+                justify-content: center;
+                flex-flow: row nowrap;
+                width: 80%;
+                margin: auto;
+            }
             a {
                 text-decoration: none;
                 font-style: inherit;
