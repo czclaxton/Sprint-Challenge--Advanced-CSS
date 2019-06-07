@@ -1,11 +1,9 @@
 .btn-text-style {
   font-size: 1.75rem;
   text-align: center;
-  color: #e8eaed;
 }
 .btn-container-style {
   width: 30%;
-  background-color: #23293B;
   padding: 10px;
   border-radius: 5px;
   border-style: none;
@@ -25,9 +23,7 @@
 .btn-style {
   font-size: 1.75rem;
   text-align: center;
-  color: #e8eaed;
   width: 30%;
-  background-color: #23293B;
   padding: 10px;
   border-radius: 5px;
   border-style: none;
@@ -210,9 +206,9 @@ p {
   }
 }
 .nav-section {
-  font-style: #454A59;
   background-color: #e9e9e9;
   border: 1px solid #dddddd;
+  font-style: #454A59;
 }
 .nav-section h1 {
   justify-content: center;
@@ -243,6 +239,9 @@ p {
   font-size: 1.5rem;
   font-weight: 600;
   color: #23293B;
+}
+.nav-section nav ul li a:hover {
+  color: #5c6c9b;
 }
 footer {
   color: #202123;
@@ -324,27 +323,31 @@ footer {
     padding: 10px;
   }
 }
+.home .walk .walk-text .btn {
+  font-size: 1.75rem;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  color: #F6F7F8;
+  background-color: #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 20px 0px;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  color: #697786;
+  background-color: #363f5b;
+}
 .home .walk h3 {
   margin-bottom: 10px;
 }
 .home .walk p {
   margin-bottom: 26px;
-}
-.home .walk .btn-div .btn {
-  font-size: 1.75rem;
-  text-align: center;
-  color: #e8eaed;
-  width: 30%;
-  background-color: #23293B;
-  padding: 10px;
-  border-radius: 5px;
-  border-style: none;
-}
-@media (max-width: 500px) {
-  .home .walk .btn-div .btn {
-    width: 100%;
-    padding: 20px 0px;
-  }
 }
 .home .walk .walk-img {
   width: 46%;

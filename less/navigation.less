@@ -1,8 +1,6 @@
 // Navigation code here
 .nav-section {
-    font-style: @river-bend;
-    background-color: darken(@wild-sand, 5%);
-    border: 1px solid darken(@wild-sand, 10%);
+    .nav-styles(@navBgColor, @navBorderColor, @navFont);
     h1 {
         .center();
         font-size: 3.5rem;
@@ -26,6 +24,9 @@
                 font-size: 1.5rem;
                 font-weight: 600;
                 color: @ebony-clay;
+                &:hover {
+                    color: lighten(@ebony-clay, 30%);
+                }
             }
         }
     }

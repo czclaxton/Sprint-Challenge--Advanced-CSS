@@ -3,19 +3,17 @@
 .btn-text-style {
     font-size: 1.75rem;
     text-align: center;
-    color: darken(@porcelain, 5%);
 }
 
 .btn-container-style {
     width: 30%;
-    background-color: @ebony-clay;
     padding: 10px;
     border-radius: 5px;
     border-style: none;
     @media @mobile {
         width: 100%;
         padding: 20px 0px;
-      }
+    }
 }
 
 .row-center {
@@ -28,9 +26,19 @@
 
 // Mixins Here
 
-.btn-style {
+.btn-style  {
     .btn-text-style();
     .btn-container-style();
+}
+
+.btn-color-style(@btnText, @btnBg){
+    color: @btnText;
+    background-color: @btnBg;
+    &:hover {
+        color: darken(@btnText, 50%);
+        background-color: lighten(@btnBg, 10%);
+    }
+
 }
 
 .center {
@@ -38,4 +46,10 @@
     .flexbox();
 }
 
+// Parametric Mixins
 
+.nav-styles(@navBgColor, @navBorderColor, @navFont) {
+    background-color: @navBgColor;
+    border: @navBorderColor;
+    font-style: @navFont;
+}
